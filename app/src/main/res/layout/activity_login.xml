@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_type_bg_color">
+
+   <com.xuefuwang.webofstudy.other.utils.TitleTextView
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       app:wallet_title_tt="个人中心"
+       app:wallet_title_msg="返回"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/girl_smile"/>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/iv"
+            android:layout_alignLeft="@+id/iv"
+            android:textColor="@color/crimson"
+            android:text="立即登录,查看更多个人信息!"/>
+
+        <Button
+            android:background="@drawable/corners_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/button"
+            android:layout_below="@+id/tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_login_button"
+            android:text="登录"
+            android:textColor="@color/white"
+           />
+</RelativeLayout>
+
+    </LinearLayout>

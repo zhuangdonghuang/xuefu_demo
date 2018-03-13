@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="附近推荐老师"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/found_jump_to_map_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_nearby"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tips_nearby_new" />
+
+        <TextView
+            android:id="@+id/found_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="120dp"
+            android:text="正在努力为您定位 ..."
+            android:textColor="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/found_srfl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xuefuwang.webofstudy.home.utils.LoadMoreListView
+            android:id="@+id/found_teacher_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.xuefuwang.webofstudy.home.utils.LoadMoreListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

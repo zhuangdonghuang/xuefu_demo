@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_type_bg_color">
+<com.xuefuwang.webofstudy.other.utils.TitleTextView
+    android:id="@+id/ttview"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/colorAccent"
+    app:wallet_title_tt="我的钱包"
+    app:wallet_title_msg="返回"/>
+
+    <LinearLayout
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_textview"
+        android:orientation="horizontal">
+        <CheckBox
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_alipay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="支付宝"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="5dp"
+    android:background="@drawable/corners_textview"
+    android:orientation="horizontal">
+    <CheckBox
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_wechat_pay"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="微信"/>
+</LinearLayout>
+    <TextView
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="最多可充值：1000元"/>
+    <EditText
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/corners_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="金额（元）"/>
+    <TextView
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="充值的钱都将安全的转移到您的余额，可用于课程购买等"/>
+
+<Button
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/corners_button"
+    android:textSize="25sp"
+    android:textColor="@color/white"
+    android:text="下一步"/>
+</LinearLayout>

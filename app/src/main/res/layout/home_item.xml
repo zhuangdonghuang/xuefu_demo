@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.xuefuwang.webofstudy.home.utils.CirclelmageView
+        android:id="@+id/home_item_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_personal_header"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/home_item_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="徐雪莲"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/home_item_iv"
+        android:layout_alignTop="@+id/home_item_iv"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/home_item_minPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥60元起"
+        android:textColor="#FDBB56"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/home_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="一元试课"
+        android:textColor="#7ECFEF"
+        android:background="@drawable/shape_item_sk"
+        android:layout_below="@+id/home_item_minPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:textSize="8sp"
+
+        />
+
+    <TextView
+        android:id="@+id/home_item_school"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="深圳大学"
+        android:layout_toRightOf="@+id/home_item_iv"
+        android:layout_below="@+id/home_item_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:textColor="#c0c0c0"
+
+        />
+
+    <TextView
+        android:id="@+id/home_item_schoolage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3年教龄"
+        android:textSize="10sp"
+        android:textColor="#F5555B"
+        android:layout_toRightOf="@+id/home_item_iv"
+        android:layout_below="@+id/home_item_school"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/home_item_courseTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="初中1-3"
+        android:layout_toRightOf="@+id/home_item_iv"
+        android:layout_below="@+id/home_item_schoolage"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:textColor="#c0c0c0"
+
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_game_list_rb"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:progressDrawable="@drawable/layer_ratingbr"
+        android:max="10"
+        android:layout_below="@+id/home_item_iv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/home_item_gethonor"
+        android:layout_width="45dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="经验丰富"
+        android:textSize="10sp"
+        android:background="@drawable/shape_gethonor"
+        android:layout_toRightOf="@+id/adapter_game_list_rb"
+        android:layout_alignTop="@+id/adapter_game_list_rb"
+        android:layout_alignLeft="@id/home_item_courseTitle"
+
+
+        />
+    <TextView
+        android:id="@+id/home_item_gethonoro"
+        android:layout_width="45dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="有耐心"
+        android:textSize="10sp"
+        android:background="@drawable/shape_gethonor"
+        android:layout_toRightOf="@+id/home_item_gethonor"
+        android:layout_alignTop="@+id/home_item_gethonor"
+        android:layout_marginLeft="5dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/home_item_gethonoroo"
+        android:layout_width="45dp"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="认真"
+        android:textSize="10sp"
+        android:background="@drawable/shape_gethonor"
+        android:layout_toRightOf="@+id/home_item_gethonoro"
+        android:layout_alignTop="@+id/home_item_gethonor"
+        android:layout_marginLeft="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/adapter_game_list_rb"
+        >
+    <TextView
+        android:id="@+id/home_item_LookCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浏览：1703"
+        android:textSize="10sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+
+        />
+        <TextView
+            android:id="@+id/home_item_CourseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程：5"
+            android:textSize="10sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/home_item_CommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论：49"
+            android:textSize="10sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/home_item_jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/nearby_special_scene_first"
+            android:text="3.34km"
+            android:textSize="10sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

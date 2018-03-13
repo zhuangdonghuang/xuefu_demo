@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+
+        <com.xuefuwang.webofstudy.home.utils.BannerLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            app:autoPlayDuration="5000"
+            app:indicatorMargin="10dp"
+            app:indicatorPosition="rightBottom"
+            app:indicatorShape="rect"
+            app:indicatorSpace="3dp"
+            app:scrollDuration="900"
+            app:defaultImage="@drawable/ic_launcher"
+            app:selectedIndicatorColor="?attr/colorPrimary"
+            app:selectedIndicatorHeight="6dp"
+            app:selectedIndicatorWidth="6dp"
+            app:unSelectedIndicatorColor="#99ffffff"
+            app:unSelectedIndicatorHeight="6dp"
+            app:unSelectedIndicatorWidth="6dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#00000000" >
+
+            <TextView
+                android:background="@drawable/selector_weizhi_tv"
+                android:id="@+id/fragment_search_break"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:drawableLeft="@drawable/weizhi"
+                android:text="深圳市"
+                android:textColor="#c0c0c0"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:padding="7dp" />
+
+            <EditText
+                android:id="@+id/fragment_et_search"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_home_search"
+                android:textColorHint="#c0c0c0"
+                android:hint="搜索老师、课程"
+                android:textColor="#c0c0c0"
+                android:paddingLeft="30dp"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/home_comm_break"
+                android:src="@drawable/icon_search"
+                android:padding="11dp"
+                android:layout_marginLeft="74dp" />
+
+            <ImageView
+                android:id="@+id/fragment_search_qd"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:src="@drawable/information"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <com.xuefuwang.webofstudy.home.utils.RippleLayout
+            android:id="@+id/ripplelayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_px">
+
+
+
+            <ImageView
+                android:id="@+id/iv_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/developstudy"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/tv_px"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="培学"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:background="#FE5164" />
+
+            <TextView
+
+                android:id="@+id/tv_tv"
+                android:layout_below="@id/tv_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="父母不会交，没时间？"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#6A75A5" />
+
+            <TextView
+                android:id="@+id/tv_hx"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/tv_tv"
+                android:background="#6A75A5" />
+
+            <TextView
+                android:id="@+id/tv_tvv"
+                android:layout_below="@id/tv_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找高校学霸培学"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#6A75A5"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_py">
+
+
+            <ImageView
+                android:id="@+id/iv_ivv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/developnice"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/tv_pxx"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="培优"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:background="#55A5FF" />
+
+            <TextView
+
+                android:id="@+id/tv_py"
+                android:layout_below="@id/tv_pxx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成绩不理想，偏科？"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/tv_pyx"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/tv_py"
+                android:background="#fff"/>
+
+            <TextView
+
+                android:id="@+id/tv_tpy"
+                android:layout_below="@id/tv_pyx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找金牌名师培优"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#fff"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_pt" >
+
+
+            <ImageView
+                android:id="@+id/iv_pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/developabroad"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tv_pt"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="培特"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:background="#FFCC01" />
+
+            <TextView
+
+                android:id="@+id/tv_tpt"
+                android:layout_below="@id/tv_pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出国留学，学口语？"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#186C55" />
+
+            <TextView
+                android:id="@+id/tv_hpt"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/tv_tpt"
+                android:background="#186C55"/>
+
+            <TextView
+
+                android:id="@+id/tv_tvpt"
+                android:layout_below="@id/tv_hpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找外国教师培特"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#186C55" />
+
+    </RelativeLayout>
+
+        </com.xuefuwang.webofstudy.home.utils.RippleLayout>
+
+        </LinearLayout>
+</LinearLayout>

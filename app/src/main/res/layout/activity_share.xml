@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/id_ly_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#F55056" >
+
+        <ImageView
+            android:id="@+id/share_id_bk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backbutton_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="学富网"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/share_id_fx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/web_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲，您的网络似乎不是很好哦！"
+             android:layout_centerInParent="true"
+            android:gravity="center"
+
+            />
+
+
+        <Button
+            android:id="@+id/web_bt"
+           android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#F55056"
+          android:text="重新加载"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/web_id"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+
+
+    />
+
+
+
+    <WebView
+
+        android:id="@+id/id_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

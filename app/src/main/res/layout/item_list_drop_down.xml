@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="com.car.cslm.widget.drop_down_menu.DefaultDropDownAdapter">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rl_option_top"
+        android:background="#f4f4f4"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layout_two_type"
+            android:layout_width="85dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_classify_group"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="小学初中" />
+
+            <TextView
+                android:id="@+id/txt_time_group"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="初中" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_filterc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f4" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

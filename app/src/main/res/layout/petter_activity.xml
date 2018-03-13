@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F55056"
+
+        >
+
+        <TextView
+            android:id="@+id/home_comm_pt_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/backbutton_icon"
+            android:text="培优"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="7dp"
+            />
+
+        <EditText
+            android:id="@+id/pt_et_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/home_comm_pt_break"
+            android:layout_alignTop="@id/home_comm_pt_break"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_search"
+            android:hint="搜索老师、课程"
+            android:paddingLeft="40dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/home_comm_pt_break"
+            android:src="@drawable/icon_search"
+            android:padding="13dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.xuefuwang.webofstudy.home.dropmenu.DropDownMenu
+            android:id="@+id/pt_dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ddmenuTextSize="13sp"
+            app:ddtextUnselectedColor="@color/drop_down_unselected"
+            app:ddtextSelectedColor="@color/drop_down_selected"
+            app:dddividerColor="@color/progressbar_bg"
+            app:ddunderlineColor="@color/gray_white"
+            app:ddmenuSelectedIcon="@drawable/drop_down_selected_icon"
+            app:ddmenuUnselectedIcon="@drawable/drop_down_unselected_icon"
+            app:ddmaskColor="@color/mask_color"
+            app:ddmenuBackgroundColor="@color/white" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_below="@+id/pt_dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pt_sf">
+
+            <com.xuefuwang.webofstudy.home.utils.LoadMoreListView
+
+                android:id="@+id/home_comm_pt_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </com.xuefuwang.webofstudy.home.utils.LoadMoreListView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

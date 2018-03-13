@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_type_bg_color">
+    <com.xuefuwang.webofstudy.other.utils.TitleTextView
+        android:id="@+id/feeback_ttView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:wallet_title_tt="意见反馈"
+        app:wallet_title_msg="返回"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/corners_feedback_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:gravity="start"
+        android:hint="请留下您的宝贵意见，我们将为您做的更好！"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/corners_textview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:hint="留下手机号/邮箱，以便更好的为您服务"/>
+
+    <Button
+        android:id="@+id/feed_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corners_button"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:text="提交"/>
+
+</LinearLayout>

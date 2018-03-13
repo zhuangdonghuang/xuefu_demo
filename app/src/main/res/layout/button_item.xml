@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_teacher_share"
+        android:text="分享"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:gravity=""
+        android:background="#fff"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/icon_teacher_collect"
+        android:text="收藏"
+        android:gravity=""
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/icon_course_contact_teacher"
+        android:text="联系老师"
+        android:background="#F55056"
+        android:layout_weight="1"
+        android:gravity=""
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+</LinearLayout>

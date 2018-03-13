@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_type_bg_color">
+
+    <com.xuefuwang.webofstudy.other.utils.TitleTextView
+        android:id="@+id/withdraw_ttview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:wallet_title_tt="余额提现"
+        app:wallet_title_msg="返回"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/goods_add_btn"
+        android:drawableRight="@drawable/next"
+        android:gravity="center_vertical"
+        android:text="暂未绑定账号,请点击添加"/>
+<LinearLayout
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="金额（元）："/>
+    <EditText
+        android:padding="10dp"
+        android:hint="请输入金额"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+</LinearLayout>
+    <TextView
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/tixian"/>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/corners_button"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:text="确认转出"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/deepskyblue"
+        android:text="提现细则"/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xz"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xz2"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xz3"/>
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/id_stickynavlayout_innerscrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#c0c0c0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/online_icon"
+                android:text="身份认证"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/id_info1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_is_nosure"
+                android:text="教师"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/id_info2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/online_icon"
+                android:text="学历认证"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_teacher_basicdocument"
+                android:text="基本资料"
+                android:textColor="#FC8187" />
+
+            <TextView
+                android:id="@+id/fragment_jl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+
+                android:text="授课教龄：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fragment_gj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_jl"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="老师国籍：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fragment_xl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_gj"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="老师国籍：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fragment_yx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_xl"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="老师国籍：1 年"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_teacher_introduce"
+                android:text="自我介绍"
+                android:textColor="#FC8187" />
+
+            <TextView
+                android:id="@+id/fragment_js"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="授课教龄：1 年"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_teacher_lesson"
+                android:text="授课范围"
+                android:textColor="#FC8187" />
+
+            <TextView
+
+                android:id="@+id/fragment_qy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="授课区域：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+
+                android:id="@+id/fragment_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_qy"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="授课方式：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+
+                android:id="@+id/fragment_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_fs"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="授课科目：1 年"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_class_time"
+                android:text="授课时段"
+                android:textColor="#FC8187" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_teacher_education"
+                android:text="教育背景"
+                android:textColor="#FC8187" />
+
+            <TextView
+
+                android:id="@+id/fragment_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="起止时间：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+
+                android:id="@+id/fragment_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sj"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="毕业院校：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fragment_zy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_school"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="所学专业：1 年"
+                android:textSize="10sp" />
+
+            <TextView
+
+                android:id="@+id/fragment_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_zy"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="具体描述：1 年"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/fragment_introduce_work_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_teacher_work"
+                android:text="工作经历"
+                android:textColor="#FC8187" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_introduce_work_experience"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_gzsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="起止时间：1 年"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/fragment_work_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="工作单位：1 年"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/fragment_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="就任职位：1 年"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/fragment_work_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="工作描述：1 年"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

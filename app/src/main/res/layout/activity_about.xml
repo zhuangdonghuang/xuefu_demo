@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_type_bg_color">
+    <com.xuefuwang.webofstudy.other.utils.TitleTextView
+        android:id="@+id/about_ttView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:wallet_title_tt="关于学富"
+        app:wallet_title_msg="返回"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/about_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           android:src="@drawable/about_money"/>
+           <TextView
+               android:id="@+id/about_tv"
+               android:layout_toRightOf="@+id/about_iv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:paddingLeft="20dp"
+               android:layout_marginTop="50dp"
+               android:text="@string/bbh"/>
+            <TextView
+                android:layout_below="@id/about_tv"
+                android:layout_alignLeft="@id/about_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="@string/about_app_name"/>
+
+            <TextView
+                android:id="@+id/about_tv2"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/about_iv"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="@string/xuefuwang_about"/>
+            <TextView
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:id="@+id/about_tv3"
+                android:layout_below="@id/about_tv2"
+                android:layout_alignLeft="@id/about_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="客服热线  4000—3210-23"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/about_tv4"
+                android:layout_below="@id/about_tv3"
+                android:layout_alignLeft="@id/about_tv2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copyrihht2015-2016学富网版权所有"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@id/about_tv4"
+                android:layout_alignLeft="@id/about_tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="深圳启程志远网络科技有限公司"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

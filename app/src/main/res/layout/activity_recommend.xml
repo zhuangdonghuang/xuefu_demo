@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xuefuwang.webofstudy.other.utils.TitleTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:wallet_title_tt="推荐有奖"
+        app:wallet_title_msg="返回"/>
+
+    <ScrollView
+        android:id="@+id/my_recommend_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    </ScrollView>
+
+</LinearLayout>
